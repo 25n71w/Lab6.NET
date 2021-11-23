@@ -59,11 +59,7 @@ namespace Lab6.NET.Controllers
             return CreatedAtAction(nameof(GetById), new { id = student.ID }, student);
         }
 
-       /* private ActionResult<Student> CreatedAtAction(string v, object p, Student student)
-        {
-
-            throw new NotImplementedException();
-        }*/
+      
 
        
         // GET : Students
@@ -110,16 +106,7 @@ namespace Lab6.NET.Controllers
             return Ok(student);
         }
 
-       /* private ActionResult<Student> Ok(Student student)
-        {
-            throw new NotImplementedException();
-        }
-
-        private ActionResult<Student> NotFound()
-        {
-            throw new NotImplementedException();
-        }
-       */
+   
         
         
         // DELETE: Students/5
@@ -142,11 +129,7 @@ namespace Lab6.NET.Controllers
             return Accepted();
         }
 
-       /* private IActionResult Accepted()
-        {
-            throw new NotImplementedException();
-        }
-       */
+     
 
         
     
@@ -189,10 +172,7 @@ namespace Lab6.NET.Controllers
 
             if (!StudentExists(id))
             {
-                /*car.ID = id;
-                _context.Add(car);
-                await _context.SaveChangesAsync();
-                return CreatedAtAction(nameof(GetById), new { id = car.ID }, car);*/
+                
                 return NotFound();
             }
 
